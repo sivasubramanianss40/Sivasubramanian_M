@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivasubramanian_M Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Garamond", serif;
+            background-color: #f9f6f1;
+            color: #1a1a1a;
+            line-height: 1.8;
+            padding: 20px;
+            margin: 0;
+        }
+        h1, h2 {
+            font-family: "Georgia", serif;
+            font-weight: normal;
+            color: #2b2b2b;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #555;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .list-group-item {
+            background: transparent;
+            border: none;
+            padding: 5px 0;
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .card {
+            background: #f3f0e6;
+            border: none;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .category-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .no-content {
+            font-style: italic;
+            color: #666;
+        }
+        .nav-tabs {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .nav-tabs .nav-link {
+            font-family: "Georgia", serif;
+            color: #333;
+            background: transparent;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.1em;
+        }
+        .nav-tabs .nav-link:hover {
+            color: #555;
+            background: #f3f0e6;
+        }
+        .nav-tabs .nav-link.active {
+            color: #2b2b2b;
+            background: #f3f0e6;
+            border-bottom: 2px solid #2b2b2b;
+        }
+        .next-link {
+            font-family: "Georgia", serif;
+            font-size: 1.1em;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        .linkedin-embed {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, .list-group-item, .card-body, .nav-tabs .nav-link, .next-link {
+                font-size: 1em;
+            }
+            .nav-tabs .nav-link {
+                padding: 8px 10px;
+            }
+            .linkedin-embed iframe {
+                width: 100%;
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section text-center">
+            <h1>Sivasubramanian M</h1>
+            <p>Computer Science Engineer | AI & ML | Deep Learning | Generative AI | AI Tools Expert | AGI</p>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                A Computer Science and Engineering graduate from Thamirabharani Engineering College, completed in 2025, with specialized expertise in artificial intelligence, deep learning, and web development. Engineered innovative AI solutions, including chatbots and disease prediction models leveraging ResNet, supported by research publications in deep learning for image processing. Recognized as a LinkedIn Top Voice for presentation skills and led the Science Club as President, enhancing student participation through technical workshops. Proficient in Python, actively pursuing opportunities to advance technology-driven solutions.
+            </p>            
+        </div>
+
+        <div class="section">
+            <h2>What I've Done</h2>
+            <ul class="nav nav-tabs" id="categoryTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai-projects" type="button" role="tab" aria-controls="ai-projects" aria-selected="true">AI Projects</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="web-tab" data-bs-toggle="tab" data-bs-target="#web-development" type="button" role="tab" aria-controls="web-development" aria-selected="false">Web Development</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="presentations-tab" data-bs-toggle="tab" data-bs-target="#presentations-workshops" type="button" role="tab" aria-controls="presentations-workshops" aria-selected="false">Presentations & Workshops</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-work" type="button" role="tab" aria-controls="design-work" aria-selected="false">Design Work</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="categoryTabsContent">
+                <div class="tab-pane fade show active" id="ai-projects" role="tabpanel" aria-labelledby="ai-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="category-title">AI Projects</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/Face-Attendance-System" target="_blank">Advanced Face Attendance System - Link</a></li>
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/India-Phone-Usage-Analytics" target="_blank">India Phone Usage Analytics Dashboard - Link</a></li>
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/Sentiment-analysis-text" target="_blank">Sentiment Analysis - Link</a></li>
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/Chat_bot" target="_blank">Chatbot - Link</a></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="web-development" role="tabpanel" aria-labelledby="web-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="category-title">Web Development</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/Portfolio" target="_blank">Portfolio - Link</a></li>
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/Restaurant-web-design" target="_blank">Restaurant Project - Link</a></li>
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/MCQ-Admin-Design" target="_blank">MCQ Admin - Link</a></li>
+                                <li class="list-group-item"><a href="https://github.com/sivasubramanianss40/MCQ-Web-design" target="_blank">MCQ - Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="presentations-workshops" role="tabpanel" aria-labelledby="presentations-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="category-title">Presentations & Workshops</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://www.linkedin.com/posts/sivasubramanianss40_innovation-deeplearning-aiinhealthcare-activity-7329028762770006016-E4Ik" target="_blank">Prediction of Brain Alzheimer's Disease from MRI Scans - Link</a></li>
+                                <li class="list-group-item"><a href="https://www.linkedin.com/posts/sivasubramanianss40_seminar-webdesign-html-activity-7097163159613964288-N0hv?utm_source=share&utm_medium=member_desktop" target="_blank">Web Design Teaching - Link</a></li>
+                                <li class="list-group-item"><a href="https://www.linkedin.com/posts/sivasubramanianss40_engineering-symposium-paperpresentation-activity-7027314009410326528-7BvL?utm_source=share&utm_medium=member_desktop" target="_blank">Neuralink Presentation - Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="design-work" role="tabpanel" aria-labelledby="design-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="category-title">Design Work</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://www.linkedin.com/posts/sivasubramanianss40_im-pleased-to-share-with-you-that-weve-activity-7118918230810775552-aA_9?utm_source=share&utm_medium=member_desktop" target="_blank">Logo Design - Link</a></li>
+                                <li class="list-group-item"><a href="https://www.linkedin.com/posts/ss40-network_logo-stickers-design-activity-7177161304036577280-k1HF?utm_source=share&utm_medium=member_desktop" target="_blank">Client Work - Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Products</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a  href="#">Currently empty, updates coming soon.</a>                            
+                            <p class="no-content">psw:  <br>Downloadable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Books</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="https://drive.usercontent.google.com/u/0/uc?id=1GMua_e9_V-cWqZnhXSJ9XZDfjDIZO9So&export=download" target="_blank">An Another Shadow - Link</a>
+                            <p class="no-content">Downloadable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="mailto:sivasubramanian46674@gmail.com">Gmail: sivasubramanian46674@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Connect</h2>
+            <div class="row g-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="https://www.youtube.com/channel/UC5-wYM4Z3gL1n9nmFNGpjJA" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="https://www.instagram.com/sivasubramanian_ss40_/" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="https://www.linkedin.com/in/sivasubramanianss40/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="https://github.com/sivasubramanianss40/" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
